@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbc_espelita.HelloController">
+   <children>
+      <TextField fx:id="registerUserName" layoutX="226.0" layoutY="116.0" />
+      <Label layoutX="94.0" layoutY="118.0" text="User Name:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="239.0" layoutY="33.0" text="Register">
+         <font>
+            <Font size="34.0" />
+         </font></Label>
+      <Label layoutX="101.0" layoutY="157.0" text="Password:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSubmit" layoutX="273.0" layoutY="252.0" mnemonicParsing="false" onAction="#onSubmitClick" text="Submit" />
+      <PasswordField fx:id="registerPassword" layoutX="226.0" layoutY="155.0" />
+   </children>
+</AnchorPane>
