@@ -4,19 +4,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbc_espelita.HelloController">
+<AnchorPane prefHeight="388.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbc_espelita.HelloController">
     <children>
-        <Button fx:id="btnLogout" layoutX="114.0" layoutY="208.0" mnemonicParsing="false" onAction="#onLogoutClick" text="Logout">
+        <Button fx:id="btnLogout" layoutX="114.0" layoutY="322.0" mnemonicParsing="false" onAction="#onLogoutClick" text="Logout">
             <font>
                 <Font size="16.0" />
             </font></Button>
-        <ColorPicker fx:id="cpPicker" layoutX="88.0" layoutY="176.0" />
-      <TextField layoutX="76.0" layoutY="69.0" />
-      <TextField layoutX="76.0" layoutY="125.0" />
-      <Label layoutX="88.0" layoutY="37.0" text="Set New Username">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
+        <ColorPicker fx:id="cpPicker" layoutX="89.0" layoutY="286.0" />
+        <TextField fx:id="updateUsername" alignment="CENTER" layoutX="76.0" layoutY="25.0" promptText="Update Username" />
+        <TextField fx:id="updatePassword" alignment="CENTER" layoutX="76.0" layoutY="94.0" promptText="Update Password" />
+        <Button layoutX="92.0" layoutY="58.0" mnemonicParsing="false" onAction="#onSetNewUsernameClick" text="Set New Username" />
+        <Button layoutX="93.0" layoutY="125.0" mnemonicParsing="false" onAction="#onSetNewPasswordClick" text="Set New Password" />
+        <Button fx:id="btnDeleteAll" layoutX="103.0" layoutY="164.0" mnemonicParsing="false" onAction="#onDeleteAll" text="Delete All Data" />
+        <Button fx:id="btnDisplay" layoutX="94.0" layoutY="245.0" mnemonicParsing="false" onAction="#onDisplayClick" text="Display Full Name" />
+        <Label fx:id="displayFullName" alignment="CENTER" layoutX="57.0" layoutY="205.0" prefHeight="21.0" prefWidth="190.0" textAlignment="CENTER" textFill="#ee0707">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
     </children>
 </AnchorPane>

@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class InsertData {
     public static void main(String[] args) {
         try (Connection c = MySQLConnection.getConnection();
-             PreparedStatement statement = c.prepareStatement("Insert into users (name, email) VALUES (?,?)")) {
+             PreparedStatement statement = c.prepareStatement("Insert into users (username, password) VALUES (?,?)")) {
 
             String name = "Raphael Espelita";
             String email = "raphael.espelita@cit.edu";

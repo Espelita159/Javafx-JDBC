@@ -12,7 +12,7 @@
                 <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
             </padding>
             <children>
-                <Label text="Welcome">
+                <Label text="Welcome" textFill="#4cd730">
                     <font>
                         <Font size="34.0" />
                     </font>
@@ -21,12 +21,12 @@
                     <children>
                         <VBox prefHeight="100.0" prefWidth="101.0">
                             <children>
-                                <Label prefHeight="31.0" prefWidth="100.0" text="User Name: ">
+                                <Label prefHeight="31.0" prefWidth="100.0" text="User Name: " textFill="#4cd730">
                                     <font>
                                         <Font size="15.0" />
                                     </font></Label>
                                 <Separator opacity="0.0" prefHeight="20.0" prefWidth="100.0" />
-                                <Label prefHeight="31.0" prefWidth="100.0" text="Password: ">
+                                <Label prefHeight="31.0" prefWidth="100.0" text="Password: " textFill="#4cd730">
                                     <font>
                                         <Font size="15.0" />
                                     </font></Label>
@@ -45,11 +45,11 @@
                     <font>
                         <Font size="14.0" />
                     </font></Button>
-            <Button fx:id="btnRegister" layoutX="130.0" layoutY="240.0" mnemonicParsing="false" onAction="#onRegisterClick" style="-fx-background-color: white;" text="Register">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
+                <Button fx:id="btnRegister" layoutX="130.0" layoutY="240.0" mnemonicParsing="false" onAction="#onRegisterClick" style="-fx-background-color: white;" text="Register">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
             </children>
         </VBox>
     </children>
